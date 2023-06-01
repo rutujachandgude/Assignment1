@@ -1,0 +1,49 @@
+{
+  "employeeList": [
+    {
+      "firstName": "ashlesha",
+      "lastName": "ashture",
+      "chooseDate": "2023-05-17T18:30:00.000Z",
+      "number": 4598763498,
+      "id": 1
+    },
+    {
+      "firstName": "Rutuja",
+      "lastName": "chandgude",
+      "chooseDate": "2023-05-18T18:30:00.000Z",
+      "number": 3456789459,
+      "id": 2
+    },
+    {
+      "firstName": "anuj",
+      "lastName": "vyas",
+      "chooseDate": "2023-05-09T18:30:00.000Z",
+      "number": 345678467866,
+      "id": 4
+    },
+    {
+      "firstName": "rutuja",
+      "lastName": "chandgude",
+      "chooseDate": "2023-06-14T18:30:00.000Z",
+      "number": 3445987654,
+      "id": 5
+    }
+  ],
+  "employ": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "firstName": "Rutuja",
+      "lastName": "chandgude",
+      "chooseDate": "2023-05-18T18:30:00.000Z",
+      "number": 876543,
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

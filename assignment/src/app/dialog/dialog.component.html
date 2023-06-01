@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>Employee Registration Form</h1>
+<div mat-dialog-content>
+ <form [formGroup]="employeeForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Employee First Name</mat-label>
+        <input formControlName="firstName" matInput placeholder="Employee First Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Employee Last Name</mat-label>
+        <input formControlName="lastName" matInput placeholder="Employee Last Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input formControlName="chooseDate" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Number</mat-label>
+        <input formControlName="number" matInput type="number" placeholder="Number">
+      </mat-form-field>
+      
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>Enter your email</mat-label>
+        <input formControlName="emailId" matInput placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field> -->
+      
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field> -->
+ </form>
+    </div>
+
+<div mat-dialog-action [align]="'end'">
+<button mat-raised-button color="warn" mat-dialog-close>Close</button>
+<button style="margin-left:8px;" mat-raised-button color="primary" (click)="addEmployee()">{{actionBtn}}</button>
+</div>
